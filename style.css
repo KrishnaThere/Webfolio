@@ -1,0 +1,387 @@
+/* Global reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+  }
+
+  /* Navigation Styling */
+  nav {
+    font-family: Helvetica, sans-serif;
+    display: flex;
+    justify-content: center; /* Center the navigation */
+    margin: 1rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+  
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none; 
+    justify-content: space-between;
+    width: 100%; /* Control spacing between elements */
+  }
+  
+  nav li {
+    margin: 0 1rem; /* Add horizontal spacing */
+  }
+  
+  nav a {
+    font-size: 1.3rem;
+    font-weight:500;
+    color: white;
+    text-decoration: none; /* Remove underline */
+    /* text-transform: uppercase; */
+  }
+  
+
+  
+  body {
+    background-color: black;
+    font-family: Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column; /* Make the body a vertical container */
+    /* min-height: 100vh; Set minimum height to viewport height */
+}
+
+.title {
+  background: none;
+    height: 80vh;
+    margin: 2.5rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    flex-grow: 1; /* Allow the title section to grow to fill remaining space */
+}
+
+.rows {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Space the rows evenly within the title section */
+    height: 100%; /* Make the rows occupy the full height of the title section */
+    line-height: 0%;
+}
+
+.workin, .progress, .krishna, .shah {
+    display: flex;
+    list-style: none; 
+    justify-content: space-between;
+    width: 100%;
+}
+h1{
+    font-size: 4rem;
+    font-weight: 500; 
+}
+img {
+  max-width: 100px;
+  max-height: 100px;
+  margin: 0 1rem;
+  position: absolute; /* Required for z-index */
+  z-index: 0; /* Default stacking order */
+}
+
+
+video {
+   
+    position: absolute; /* Required for z-index */
+    z-index: 0; /* Default stacking order */
+  }
+
+.rush{
+    width: 250px;
+    height:auto;
+    top:18vh;
+    left:65vw
+  }
+
+.website{
+width: 250px;
+height:auto;
+top:68vh;
+left:65vw;
+}
+
+.drop{
+    width:250px;
+    height:auto;
+    top:20vh;
+    left:20vw;
+}
+
+.cadence{
+    width:250px;
+    height:auto;
+    top:45vh;
+    left:45vw;
+}
+
+.eyedropper{
+  width:250px;
+  height:auto;
+  top:65vh;
+  left:15vw;
+}
+
+
+
+
+
+.images a p {
+  position: relative;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: white;
+    z-index: 100;
+}
+
+
+video:hover {
+  transform: scale(3);
+  z-index: 10; /* Place image on top during hover */
+  transition: transform 0.3s ease;
+}
+
+
+
+.connectlink{
+  position: fixed;
+  width:25vw;
+  right:-100%;
+  height:94vh;
+  top:6vh;
+  background-color: black;
+  color:white;
+  z-index:1500;
+  transition:right 1s ease;
+  overflow-y: auto;
+}
+
+.connectlink p{
+  padding-top: 6vh;
+  padding:50px;
+  font-size: 1.3rem;
+  font-weight:200;
+  color: white;
+  text-decoration: none; /* Remove underline */
+  
+}
+
+.connectlink p a{
+
+  color: white;
+  text-decoration: none; /* Remove underline */
+}
+
+
+.connectlink.active{
+  right:0;
+}
+.connectlink p a:hover{
+  text-decoration: underline; /* Remove underline */
+}
+
+@media screen and (max-width: 1024px) {
+  
+}
+
+@media screen and (max-width: 768px) {
+
+  .connectlink{
+    position: fixed;
+    width:55vw;
+    right:-100%;
+    height:94vh;
+    top:6vh;
+    background-color: black;
+    color:white;
+    z-index:1500;
+    transition:right 1s ease;
+    overflow-y: auto;
+  }
+  
+  .connectlink p{
+    padding-top: 6vh;
+    padding:5vw;
+    font-size: 1.2rem;
+    font-weight:200;
+    color: white;
+    text-decoration: none; /* Remove underline */
+    
+  }
+
+  .title {
+    background: none;
+      height: 80vh;
+      margin: 1rem;
+      margin-top: 2rem;
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: white;
+      flex-grow: 1; /* Allow the title section to grow to fill remaining space */
+  }
+  h1{
+    font-size: 3.5rem;
+    font-weight: 500; 
+}
+  
+  .rows {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; /* Space the rows evenly within the title section */
+      height: 100%; /* Make the rows occupy the full height of the title section */
+      line-height: 0%;
+  }
+  
+  .workin, .progress, .krishna, .shah {
+      display: flex;
+      list-style: none; 
+      justify-content: space-between;
+      width: 100%;
+  }
+  img {
+    max-width: 50px;
+    max-height: 50px;
+    /* margin: 1rem; */
+    position: absolute; /* Required for z-index */
+    z-index: 0; /* Default stacking order */
+  }
+  video{
+    max-width: 150px;
+    max-height: auto;
+    /* margin: 0 1rem; */
+    position: absolute; /* Required for z-index */
+    z-index: 0; /* Default stacking order */
+  }
+  
+  
+  video:hover {
+    transform: scale(2);
+    z-index: 10; /* Place image on top during hover */
+    transition: transform 0.3s ease;
+  }
+  
+  
+ 
+ 
+}
+
+@media screen and (max-width: 480px) {
+
+  .connectlink{
+    position: fixed;
+    width:100vw;
+    right:-100%;
+    height:94vh;
+    top:6vh;
+    background-color: black;
+    color:white;
+    z-index:1500;
+    transition:right 1s ease;
+    overflow-y: auto;
+  }
+  
+  .connectlink p{
+    padding-top: 6vh;
+    padding:10vw;
+    font-size: 1.2rem;
+    font-weight:200;
+    color: white;
+    text-decoration: none; /* Remove underline */
+    
+  }
+
+  nav {
+    cursor:default;
+  
+  font-family: Helvetica, sans-serif;
+  
+  display: flex;
+  
+  justify-content: center; /* Center the navigation */
+  
+  margin: 1rem;
+  
+  
+  height:4vh;
+  
+  }
+  
+  
+  nav ul {
+  
+  display: flex;
+  
+  list-style: none;
+  
+  justify-content: space-between;
+  
+  width: 100%; /* Control spacing between elements */
+  
+  }
+  
+  
+  nav li {
+  
+  margin: 0 1rem; /* Add horizontal spacing */
+  cursor:default;
+  
+  }
+  
+  
+  nav a {
+  
+  font-size: 1.1rem;
+  
+  font-weight:500;
+  
+  color: white;
+  
+  text-decoration: none; /* Remove underline */
+  
+  cursor:default;
+  /* text-transform: uppercase; */
+  
+  }
+
+  
+  .title {
+    background: none;
+      height: 70vh;
+      margin: 1rem;
+      margin-top: 10vh;
+      font-size: 1.4rem;
+      font-weight: bold;
+      color:white;
+      flex-grow: 1; /* Allow the title section to grow to fill remaining space */
+  }
+  
+  h1{
+    font-size: 3rem;
+    font-weight: 400; 
+}
+
+  .rows {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; /* Space the rows evenly within the title section */
+      height: 100%; /* Make the rows occupy the full height of the title section */
+      line-height: 0%;
+  }
+  
+  .workin, .progress, .krishna, .shah {
+      display: flex;
+      list-style: none; 
+      justify-content: space-between;
+      width: 100%;
+  }
+
+  video{
+    max-width: 80px;
+    max-height: auto;
+    /* margin: 0 1rem; */
+    position: absolute; /* Required for z-index */
+    z-index: 0; /* Default stacking order */
+  }
+}
