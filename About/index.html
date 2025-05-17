@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Work in Progress</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a class="work" href="/index.html">Webfolio</a></li>
+      <li><a class="about" href="https://krishnathere.github.io/Portfolio/About/">About</a></li>
+      <li><a class="connect">Connect</a></li>
+    </ul>
+  </nav>
+  <div class="connectlink">
+    <ul class="list">
+      <p>If you enjoyed looking at my work and have any constructive feedback or critique or if you wish to collaborate or just wanna say hi, I am more than happy to connect. You can find me:<br><br>
+      
+      <a href="mailto:shahk153@newschool.com">@email</a><br>
+      <a href="https://www.instagram.com/krishna_shah16o7/">@instagram</a><br>
+      <a href="https://www.linkedin.com/in/krishna-shah-43471a243">@linkedin</a></p>
+    </ul>
+  </div>
+
+  <div class="content">
+    <div class="video">
+ <video muted autoplay loop playsinline src="k.mp4" alt="logo" class="breathe"> </video>
+</div>
+<div class="aboutme">
+    <p>
+      Hi! I’m Krishna. Thank you for visiting my site and exploring my work.<br><br>
+
+      I’m a graphic designer from Gujarat, India, currently studying at Parsons School of Design. My journey began with a path toward engineering, but my passion for creativity led me to design. Moving to the U.S. became a turning point, guiding me to Parsons, where I’ve had the privilege of learning from a diverse, global community and drawing inspiration from New York City’s dynamic design culture.<br><br>
+      
+      Beyond design, I enjoy solving sudoku, hiking, dancing, painting, and immersing myself in music. For me, design is more than simplifying complex ideas, it’s about crafting experiences that evoke emotion, spark thought, and leave a lasting impact.
+    </p>
+</div>
+  </div>
+
+  <script>
+    const connect= document.querySelector('.connect')
+    const connectlink= document.querySelector('.connectlink')
+    connect.addEventListener('click',(event)=>{
+  event.preventDefault();
+  connectlink.classList.toggle('active')
+    })
+  
+    document.addEventListener('click', (event) => {
+    if (!connectlink.contains(event.target) && !connect.contains(event.target)) {
+      connectlink.classList.remove('active');
+    }
+  });
+  </script>
+  
+  </body>
+  </html>

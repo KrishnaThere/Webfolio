@@ -1,0 +1,299 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Navigation Styling */
+  nav {
+    font-family: Helvetica, sans-serif;
+    display: flex;
+    justify-content: center; /* Center the navigation */
+    margin: 1rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+  
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none; 
+    justify-content: space-between;
+    width: 100%; /* Control spacing between elements */
+  }
+  
+  nav li {
+    margin: 0 1rem; /* Add horizontal spacing */
+  }
+  
+  nav a {
+    font-size: 1.3rem;
+    font-weight:500;
+    color: white;
+    text-decoration: none; /* Remove underline */
+    /* text-transform: uppercase; */
+  }
+  
+
+  
+
+  
+  body {
+    background-color: black;
+    font-family: Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column; /* Make the body a vertical container */
+    /* min-height: 100vh; Set minimum height to viewport height */
+}
+
+.connectlink{
+  position: fixed;
+  width:25vw;
+  right:-100%;
+  height:94vh;
+  top:6vh;
+  background-color: black;
+  color:white;
+  z-index:1500;
+  transition:right 1s ease;
+  overflow-y: auto;
+}
+
+.connectlink p{
+  padding-top: 6vh;
+  padding:50px;
+  font-size: 1.3rem;
+  font-weight:200;
+  color: white;
+  text-decoration: none; /* Remove underline */
+  
+}
+
+.connectlink p a{
+
+  color: white;
+  text-decoration: none; /* Remove underline */
+}
+
+
+.connectlink.active{
+  right:0;
+}
+.connectlink p a:hover{
+  text-decoration: underline; /* Remove underline */
+}
+  
+  .content{
+    display:flex;
+    flex-direction: row;
+  }
+
+  .video video{
+    width:37vw;
+    height:100vh;
+    top:7vh;
+    object-fit: cover;
+    position: fixed;
+    
+  }
+  .aboutme {
+    font-size: 1.8rem;
+    font-weight: 200;
+    color: white;
+    padding-left: 45vw;
+    padding-right: 10vw;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    position: relative;
+    height: 100vh; /* Set a fixed height */
+    overflow-y: auto; /* Enable vertical scrolling */
+    scrollbar-width: thin; /* Thin scrollbar for modern browsers */
+    scrollbar-color: white black; /* Red scrollbar thumb on white track */
+  }
+  
+  /* For Webkit Browsers (like Chrome and Safari) */
+  .aboutme::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .aboutme::-webkit-scrollbar-thumb {
+    background-color:white;
+    border-radius: 4px;
+  }
+
+
+
+  @media screen and (max-width: 1024px) {
+  
+  }
+  
+  @media screen and (max-width: 768px) {
+
+    .connectlink{
+      position: fixed;
+      width:55vw;
+      right:-100%;
+      height:94vh;
+      top:6vh;
+      background-color: black;
+      color:white;
+      z-index:1500;
+      transition:right 1s ease;
+      overflow-y: auto;
+    }
+    
+    .connectlink p{
+      padding-top: 6vh;
+      padding:5vw;
+      font-size: 1.2rem;
+      font-weight:200;
+      color: white;
+      text-decoration: none; /* Remove underline */
+      
+    }
+  
+    .content{
+        display:flex;
+        flex-direction: row;
+      }
+    
+      .video video{
+        width:37vw;
+        height:100vh;
+        top:7vh;
+        object-fit: cover;
+        position: fixed;
+        
+      }
+      .aboutme {
+        font-size: 1.5rem;
+        font-weight: 200;
+        color: white;
+        padding-left: 45vw;
+        padding-right: 10vw;
+        padding-top: 7vh;
+        padding-bottom: 10vh;
+        position: relative;
+        height: 100vh; /* Set a fixed height */
+        overflow-y: auto; /* Enable vertical scrolling */
+        scrollbar-width: thin; /* Thin scrollbar for modern browsers */
+        scrollbar-color: white black; /* Red scrollbar thumb on white track */
+      }
+   
+  }
+  
+  @media screen and (max-width: 480px) {
+
+    .connectlink{
+      position: fixed;
+      width:100vw;
+      right:-100%;
+      height:94vh;
+      top:6vh;
+      background-color: black;
+      color:white;
+      z-index:1500;
+      transition:right 1s ease;
+      overflow-y: auto;
+    }
+    
+    .connectlink p{
+      padding-top: 6vh;
+      padding:10vw;
+      font-size: 1.2rem;
+      font-weight:200;
+      color: white;
+      text-decoration: none; /* Remove underline */
+      
+    }
+  
+    nav {
+      cursor:default;
+    
+    font-family: Helvetica, sans-serif;
+    
+    display: flex;
+    
+    justify-content: center; /* Center the navigation */
+    
+    margin: 1rem;
+    
+    
+    height:4vh;
+    
+    }
+    
+    
+    nav ul {
+    
+    display: flex;
+    
+    list-style: none;
+    
+    justify-content: space-between;
+    
+    width: 100%; /* Control spacing between elements */
+    
+    }
+    
+    
+    nav li {
+    
+    margin: 0 1rem; /* Add horizontal spacing */
+    cursor:default;
+    
+    }
+    
+    
+    nav a {
+    
+    font-size: 1.1rem;
+    
+    font-weight:500;
+    
+    color: white;
+    
+    text-decoration: none; /* Remove underline */
+    
+    cursor:default;
+    /* text-transform: uppercase; */
+    
+    }
+  
+
+    .content{
+        display: block; /* Change from flex to block for vertical stacking */
+        position: relative;
+        width: 100vw;
+        overflow-y: auto;
+        scrollbar-width: thin; /* Thin scrollbar for modern browsers */
+  scrollbar-color: white black; /* Red scrollbar thumb on white track */
+      }
+    
+      .video video{
+        
+        width:100vw;
+        clip-path: inset(2% 2% 2% 2%);
+        height:70vh;
+        top:0vh;
+        object-fit: cover;
+        position: relative;
+        
+      }
+      .aboutme {
+        font-size: 1.4rem;
+        font-weight: 200;
+        color: white;
+        padding-left: 5vw;
+        padding-right: 5vw;
+        padding-top: 3vh;
+        padding-bottom: 10vh;
+         position: relative;
+       width:100vw;
+       
+    
+      }
+    
+
+   
+  }
