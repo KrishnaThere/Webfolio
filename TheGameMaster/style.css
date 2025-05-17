@@ -1,0 +1,539 @@
+* {
+
+    margin: 0;
+    
+    padding: 0;
+    
+    box-sizing: border-box;
+    
+    }
+    
+    
+    /* Navigation Styling */
+    
+    nav {
+        font-family: Helvetica, sans-serif;
+        display: flex;
+        justify-content: center; /* Center the navigation */
+        margin: 1rem;
+        margin-left: 3rem;
+        margin-right: 3rem;
+      
+      }
+      
+      nav ul {
+        display: flex;
+        list-style: none; 
+        justify-content: space-between;
+        width: 100%; /* Control spacing between elements */
+      }
+      
+      nav li {
+        margin: 0 1rem; /* Add horizontal spacing */
+      }
+      
+      nav a {
+        font-size: 1.3rem;
+        font-weight:500;
+        color: white;
+        text-decoration: none; /* Remove underline */
+        /* text-transform: uppercase; */
+      }
+  
+    
+    body {
+    
+    background-color: black;
+    
+    font-family: Helvetica, sans-serif;
+    
+    }
+  
+    
+   .page {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    cursor: default;
+  }
+  
+  .description {
+    position: fixed; /* Fixes description on the left */
+    left: 3rem; /* Adds space from the left */
+    width: 15vw;
+    bottom: 5vh;
+    cursor: default;
+  }
+  
+  .description p {
+    font-size: 1.3rem;
+    color: white;
+    font-weight: normal;
+  }
+  
+  .description p a {
+    color: white;
+  }
+  
+  .project {
+    margin-left: 25vw; /* Pushes the project section to the right of the description */
+    width: calc(100% - 25vw); /* Takes up remaining space */
+    height: 100vh; /* Full viewport height */
+    overflow-y: scroll; /* Makes it scrollable vertically */
+    bottom: 0;
+    position: relative;
+  }
+  
+  .images {
+    margin-top: 10px;
+    bottom: 0;
+  }
+  
+  .images video {
+    width: 75vw; /* Occupies the defined width */
+    height: auto; /* Occupies the defined height */
+    object-fit: contain; /* Keeps aspect ratio and fits within the frame */
+  }
+  .images .main{
+    height:95vh;
+  }
+
+  .images img {
+    width: 75vw; /* Occupies the defined width */
+    height: auto; /* Occupies the defined height */
+    object-fit: contain; /* Keeps aspect ratio and fits within the frame */
+  }
+  .project {
+    scrollbar-width: thin;
+    scrollbar-color: white black;
+  }
+  
+  .project::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .project::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 4px;
+  }
+  
+  
+  .connectlink{
+    position: fixed;
+    width:25vw;
+    right:-100%;
+    height:94vh;
+    top:6vh;
+    background-color: black;
+    color:white;
+    z-index:1500;
+    transition:right 1s ease;
+    overflow-y: auto;
+  }
+  
+  .connectlink p{
+    padding-top: 6vh;
+    padding:50px;
+    font-size: 1.3rem;
+    font-weight:200;
+    color: white;
+    text-decoration: none; /* Remove underline */
+    
+  }
+  
+  .connectlink p a{
+  
+    color: white;
+    text-decoration: none; /* Remove underline */
+  }
+    
+    
+    .connectlink.active{
+      right:0;
+    }
+    .connectlink p a:hover{
+      text-decoration: underline; /* Remove underline */
+    }
+    
+  
+  
+  
+  
+  
+  
+    
+    @media screen and (max-width: 750px) {
+  
+    
+      .page{
+        
+        display: block;
+      
+        
+        width: 100%;
+        
+        }
+        
+    
+        .thumbnails img {
+          opacity: 0;
+           width: 0px;
+          height: 0px;
+          object-fit: cover;
+    
+            margin: 0 1rem;
+            position: absolute; /* Required for z-index */
+           
+          }
+          
+          
+          
+    
+    
+        .title {
+        
+        
+            background: none;
+            
+            height: 0px;
+            
+            margin: 0px;
+            
+            font-size: 0px;
+            
+            font-weight: bold;
+            
+            color: white;
+            
+            
+            }
+            
+    
+    
+        .description {
+        
+        position: relative; /* Fixes description on the left */
+        
+        left: 0vw; /* Adds space from the left */
+        margin: 6vw;
+        
+        width: 88vw;
+    
+        
+        top:0vh
+        
+        
+        
+        }
+        
+        .description p{
+        
+        font-size: 1.2rem;
+        
+        color: white;
+        
+        font-weight: normal;
+        
+        }
+    
+    
+        
+        
+        .project {
+        
+        margin-left: 0vw; /* Pushes the project section to the right of the description */
+        
+        width: calc(100%); /* Takes up remaining space */
+        
+        height: auto; /* Full viewport height */
+        
+        overflow-y:auto;
+        
+        bottom:0;
+        position: relative;
+        
+        }
+    
+    
+       
+        
+        
+        
+        
+        
+        
+        .images{
+        
+        margin-top: 10px;
+        
+        bottom:0;
+        
+        }
+        
+        .images img {
+        
+        width: 100vw; /* Occupies the defined width */
+        height:auto;
+        
+       
+        
+        object-fit: cover; /* Keeps aspect ratio and fits within the frame */
+        
+        }
+        
+        .images .breathe{
+            height:auto;
+        
+        object-fit: contain;
+      
+        
+        }
+    
+    
+      .connectlink{
+        position: fixed;
+        width:55vw;
+        right:-100%;
+        height:94vh;
+        top:6vh;
+        background-color:black;
+        color:white;
+        z-index:1500;
+        transition:right 1s ease;
+        overflow-y: auto;
+      }
+      
+      .connectlink p{
+        padding-top: 6vh;
+        padding:5vw;
+        font-size: 1.2rem;
+        font-weight:200;
+        color: white;
+        text-decoration: none; /* Remove underline */
+        
+      }
+      .images video {
+    
+        width: 100vw; /* Occupies the defined width */
+       height: auto; /* Occupies the defined height */
+        
+        object-fit: contain; /* Keeps aspect ratio and fits within the frame */
+        
+        }
+      
+     
+     
+    }
+    
+    @media screen and (max-width: 480px) {
+    
+    
+    
+    
+      .page{
+        
+        display: block;
+      
+        
+        width: 100%;
+        
+        }
+        
+    
+        .thumbnails img {
+          opacity: 0;
+           width: 0px;
+          height: 0px;
+          object-fit: cover;
+    
+            margin: 0 1rem;
+            position: absolute; /* Required for z-index */
+           
+          }
+          
+          
+          
+    
+    
+        .title {
+        
+        
+            background: none;
+            
+            height: 0px;
+            
+            margin: 0px;
+            
+            font-size: 0px;
+            
+            font-weight: bold;
+            
+            color:white;
+            
+            
+            }
+            
+    
+    
+        .description {
+        
+        position: relative; /* Fixes description on the left */
+        
+        left: 0vw; /* Adds space from the left */
+        margin: 6vw;
+        
+        width: 88vw;
+        
+        top:0vh
+        
+        
+        
+        }
+        
+        .description p{
+        
+        font-size: 1.2rem;
+        
+        color: white;
+        
+        font-weight: normal;
+        
+        }
+    
+    
+        
+        
+        .project {
+        
+        margin-left: 0vw; /* Pushes the project section to the right of the description */
+        
+        width: calc(100%); /* Takes up remaining space */
+        
+        height: auto; /* Full viewport height */
+        
+        overflow-y:auto;
+        
+        bottom:0;
+        position: relative;
+        
+        }
+    
+    
+       
+        
+        
+        
+        
+        
+        
+        .images{
+        
+        margin-top: 10px;
+        
+        bottom:0;
+        
+        }
+        
+        .images img {
+        
+        width: 100vw; /* Occupies the defined width */
+        height:auto;
+        
+       
+        
+        object-fit: cover; /* Keeps aspect ratio and fits within the frame */
+        
+        }
+        
+        .images .breathe{
+            height:40vh;
+        
+        object-fit: contain;
+      
+        
+        }
+    
+        .connectlink{
+            position: fixed;
+            width:100vw;
+            right:-100%;
+            height:94vh;
+            top:6vh;
+            background-color: black;
+            color:white;
+            z-index:1500;
+            transition:right 1s ease;
+            overflow-y: auto;
+          }
+          
+          .connectlink p{
+            padding-top: 6vh;
+            padding:10vw;
+            font-size: 1.2rem;
+            font-weight:200;
+            color: white;
+            text-decoration: none; /* Remove underline */
+            
+          }
+        
+          nav {
+            cursor:default;
+          
+          font-family: Helvetica, sans-serif;
+          
+          display: flex;
+          
+          justify-content: center; /* Center the navigation */
+          
+          margin: 1rem;
+          
+          
+          height:4vh;
+          
+          }
+          
+          
+          nav ul {
+          
+          display: flex;
+          
+          list-style: none;
+          
+          justify-content: space-between;
+          
+          width: 100%; /* Control spacing between elements */
+          
+          }
+          
+          
+          nav li {
+          
+          margin: 0 1rem; /* Add horizontal spacing */
+          cursor:default;
+          
+          }
+          
+          
+          nav a {
+          
+          font-size: 1.1rem;
+          
+          font-weight:500;
+          
+          color: white;
+          
+          text-decoration: none; /* Remove underline */
+          
+          cursor:default;
+          /* text-transform: uppercase; */
+          
+          }
+        
+    
+      
+      
+    
+     
+    }
+    

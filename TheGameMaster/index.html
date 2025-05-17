@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Work in Progress</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- Navigation -->
+
+<nav>
+
+<ul>
+
+<li><a class="work" href="/index.html">Webfolio</a></li>
+
+<li><a class="about" href="/">About</a></li>
+
+<li><a class="connect" href="/">Connect</a></li>
+
+</ul>
+
+</nav>
+
+<div class="connectlink">
+    <ul class="list">
+      <p>If you enjoyed looking at my work and have any constructive feedback or critique or if you wish to collaborate or just wanna say hi, I am more than happy to connect. You can find me:<br><br>
+      
+      <a href="mailto:shahk153@newschool.com">@email</a><br>
+      <a href="https://www.instagram.com/krishna_shah16o7/">@instagram</a><br>
+      <a href="https://www.linkedin.com/in/krishna-shah-43471a243">@linkedin</a></p>
+    </ul>
+  </div>
+
+<div class="page">
+
+<div class="description">
+
+<p>
+
+  A Fun Interactive<br>
+
+  Website on games<br>
+  
+  Skilles developed:<br>
+  
+  interactive coding<br><br>
+  
+Website live
+<a href="https://shahk153.github.io/harmonic-collection/">@TheGameMaster</a>
+<br>
+
+<br>
+
+
+
+September 4, 2024  <br>
+October 25, 2024<br>
+VScode/Github,<br>
+Figma,<br>
+P5.js
+
+
+
+</p>
+
+</div>
+
+
+<div class="project">
+   
+
+
+
+
+
+<div class="images">
+ 
+  <video muted autoplay loop playsinline controls class="main" src="videos/website.mp4" alt="spread"></video>
+  <img src="videos/home.png">
+  <img src="videos/Arcade.png">
+  <img src="videos/instructions.png">
+  <img src="videos/buynow.png">
+  <img src="videos/1.png">
+  <img src="videos/2.png">
+  <img src="videos/3.png">
+  <img src="videos/4.png">
+  <img src="videos/5.png">
+  <img src="videos/6.png">
+  
+</div>
+
+</div>
+
+</div>
+<script>
+     const connect= document.querySelector('.connect')
+  const connectlink= document.querySelector('.connectlink')
+  connect.addEventListener('click',(event)=>{
+event.preventDefault();
+connectlink.classList.toggle('active')
+  })
+
+  document.addEventListener('click', (event) => {
+  if (!connectlink.contains(event.target) && !connect.contains(event.target)) {
+    connectlink.classList.remove('active');
+  }
+});
+
+</script>
+
+
+</body>
+
+</html>
+
+
+
